@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.origin{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+ :root{
+    --preparation-time :hsl(332, 51%, 32%);
+    --other-heading :hsl(14, 45%, 36%);
+    --simple: hsl(24, 5%, 18%);
+    --hfont: font-family: "Young Serif", serif;
+    --pfont: font-family: "Outfit", sans-serif;
+}
+.parent-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    border-radius: 30px;
+    padding: 30px;
+    width: 650px;
+    gap: 10px;
+}
+img{
+    width: 600px;
+    border-radius: 10px;
+}
+h1{
+    font-family: "Young Serif", serif;
+    color: hsl(24, 5%, 18%);
+}
+p{
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+}
+.preparation{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: hsl(30, 54%, 90%);
+    border-radius: 10px;
+}
+.preparation h3{
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 10px;
+}
+.preparation ul{
+    padding-left: 30px;
+}
+ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+span{
+    font-weight: bold;
+    color: hsl(24, 5%, 18%);
+}
+.ingredient{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+}
+.list2 li::marker{
+    color: hsl(14, 45%, 36%);
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    padding-bottom: 10px;
+}
+li{
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit", sans-serif;
+}
+.ingredient ul{
+    padding-left: 20px;
+}
+.instruction{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.instruction ol{
+    padding-left: 15px;
+}
+.nutrition{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+tr{
+    border-bottom: 2px solid black;
+}
+table{
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    border-collapse: collapse;
+}
+.table-title{
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+}
+.calories{
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+.line{
+    border-bottom: 0.5px solid black;
+}
+/* media query */
+@media(max-width:600px){
+    .parent-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    border-radius: 30px;
+    padding: 30px;
+    width: 400px;
+    gap: 10px;
+    }
+    img{
+        width: 300px;
+    }
+}
+@media(max-width:400px){    
+    .parent-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    border-radius: 30px;
+    padding: 30px;
+    width: 250px;
+    gap: 10px;
+    }
+    img{
+        width: 150px;
+    }
+}
